@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box; /* indica el espaciado interno y externo uniformes*/
+    margin: 0; /* indica que no habrá márgen hacia afuera*/
+    padding: 0; /* indica que no habrá márgen hacia adentro*/
+}
+
+/* para el body*/
+
+body {
+    background: lightyellow;
+    color: grey;
+    background-color: white;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif; /* esta línea se extrajo desde google fonts*/
+
+}
+
+.container {
+    width: 90%; /* es decir abarcará sólo el 90% de la página---visualmente dejará espacio de lado y lado */
+    margin: auto;
+}
