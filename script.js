@@ -37,6 +37,14 @@ registro.addEventListener('submit', (e)=>{
     localStorage.setItem('Clientes', JSON.stringify(clientes))
     registro.reset()
 
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Cliente Registrado Exitosamente',
+        showConfirmButton: false,
+        timer: 1500
+    })
+
 })
 
 listar.addEventListener('click', ()=>{

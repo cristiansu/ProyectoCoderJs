@@ -38,4 +38,12 @@ contacto.addEventListener('submit', (e)=>{
     localStorage.setItem('Consultas', JSON.stringify(consultas))
     contacto.reset()
 
+    Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Mensaje Enviado Exitosamente',
+        showConfirmButton: false,
+        timer: 1500
+    })
+
 })
