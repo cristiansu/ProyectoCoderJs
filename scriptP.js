@@ -31,7 +31,20 @@ registro.addEventListener('submit', (e)=>{
     let marca = document.getElementById('idMarca').value
     let modelo = document.getElementById('idModelo').value
     let precio = document.getElementById('idPrecio').value
-    let foto = document.getElementById('idFoto').files[0].name
+
+    
+    // let foto = document.getElementById('idFoto').files[0].name
+    let foto = document.getElementById('idFoto').value
+    
+    /*var uploaded_image;
+    foto.addEventListener('change', function(){
+        const reader = new FileReader();
+        reader.addEventListener('load', () => {
+            uploaded_image = reader.result;
+            document.getElementById('idFoto').style = `url(${uploaded_image})`
+        });
+        reader.readAsDataURL(this.files[0]);
+    })*/
 
     const producto = new Producto(nombre, marca, modelo, precio, foto)
     productos.push(producto)
@@ -57,12 +70,13 @@ listar.addEventListener('click', ()=>{
     arrayStorage.forEach((productoArray, indice) => {
 
         registrados.innerHTML += `
-        <tr id=cliente${indice}>
+        <tr id="cliente${indice}">
         <td>${productoArray.nombre}</td>
         <td>${productoArray.marca}</td>
         <td>${productoArray.modelo}</td>
         <td>${productoArray.precio}</td>
         <td>${productoArray.foto}</td>
+        <td><button class="btn btn-danger" id="btnEliminar${indice}">Eliminar</button></td>
         </tr>
         `
         
@@ -81,7 +95,14 @@ listar.addEventListener('click', ()=>{
     </div>
     `
 
-    
+    productos.forEach((productoArray, indice) => {
+        document.getElementById(`btnEliminar${indice}`).addEventListener('click', () => {
+            registrados.removeChild(document.getElementById(`cliente${indice}`))
+            let indiceArray = productos.findIndex(producto => producto.nombre == productoArray.nombre)
+            productos.splice(indiceArray,1)
+            localStorage.setItem('Productos', JSON.stringify(productos))
+        })
+    })
 
 
 })

@@ -15,7 +15,7 @@ registradosP.addEventListener('click', ()=>{
 
             <div class="contenedor_producto">
 
-                <img src="img/${productoArray.foto}" alt="imagen producto">
+                <img src="${productoArray.foto}" alt="imagen producto" id="display_img">
                 <div class="detalle">
                     <h5>${productoArray.nombre}</h5>
                     <h2>${productoArray.marca}</h2>

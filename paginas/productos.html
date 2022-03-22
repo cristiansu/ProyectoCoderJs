@@ -71,7 +71,7 @@
 
             <div class="mb-3">
                 <label for="telefono" class="form-label">Foto</label>
-                <input type="file" class="form-control" id="idFoto" placeholder="Ingrese Foto Producto">
+                <input type="text" class="form-control" id="idFoto" placeholder="Copiar Vínculo de Imagen" accept="image/png, image/jpg">
             </div>
     
             <button type="submit" class="btn btn-dark" id="agregar">Agregar Producto</button>
@@ -95,7 +95,7 @@
             </div>
 
             <div class="col-2">
-                <button class="btn btn-primary" id="lista">Productos</button>
+                <button class="btn btn-primary" id="lista">Ver Productos</button>
             </div>
 
         </div>
@@ -104,7 +104,7 @@
 
     </div>
 
-    <div class="container-lg">
+    <div class="container-sm">
         <table class="table table-striped">
             <thead>
               <tr>
@@ -113,6 +113,7 @@
                 <th scope="col">Modelo</th>
                 <th scope="col">Precio</th>
                 <th scope="col">Foto</th>
+                <th scope="col">Opciones</th>
               </tr>
             </thead>
             <tbody id="productosR">
