@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;700&display=swap" rel="stylesheet">
-    <title>Registro FC</title>
+    <title>Locales</title>
     <!-- <link rel="stylesheet" href="styleC.css"> -->
     <link rel="stylesheet" href="../css/estilos.css">
   </head>
@@ -34,61 +34,43 @@
                   <li>
                       <a href="contacto.html">Contacto</a>
                   </li>
-                  <li><a href="#">Clientes</a></li>
+                  <li><a href="clientes.html">Clientes</a></li>
                   <li><a href="productos.html">Agregar Productos</a></li>
-                  <li><a href="#">RegistroFcontacto</a></li>
-                  <li><a href="locales.html">Locales</a></li>
+                  <li><a href="registroFormContacto.html">RegistroFcontacto</a></li>
+                  <li><a href="#">Locales</a></li>
               </ul>
           </nav>
 
       </div>
 
-    </header>
-    <br><br><br>
+  </header>
     
+    <div class="container">
+        <h1>Visite nuestros locales</h1>
+        <div id="divLocales" class="productos">
+        </div>
 
-    <div class="container-md">
-        
-        <div class="row">
+        <br><br><br>
 
-            <div class="col">
-            <h1>Registro Formulario de Contacto</h1>
-            <br>
-            <h2>Lista de Consultas, Sugerencias y Reclamos</h2>         
-            </div>
+        <h2>Indicadores Económicos</h2>
 
-            <div class="col" id="tarjeta">
+        <br><br>
 
-            </div>
+        <div class="section">
+          <button class="btn blue" id="dolar">Dólar</button>
+          <button class="btn grey" id="uf">UF</button>
 
-            <div class="col-2">
-                <button class="btn btn-primary" id="listaCSR">Ver Registro</button>
-            </div>
-
+          <div id="divIndicadores"> 
+          </div>
         </div>
 
 
 
+
+
     </div>
 
-    <br><br>
 
-    <div class="container-lg">
-        <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Email</th>
-                <th scope="col">Teléfono</th>
-                <th scope="col">Tipo Consulta</th>
-                <th scope="col">Mensaje</th>
-              </tr>
-            </thead>
-            <tbody id="CSR">
-
-            </tbody>
-          </table>
-    </div>
 
 
 
@@ -97,7 +79,8 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../regformcto.js"></script>
+    <script src="locales.js"></script>
+    <script src="indicadores.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 

@@ -1,0 +1,26 @@
+[
+    {
+        "local":"Costanera",
+        "direccion":"Mall Costanera Center Local 105",
+        "jefe":"Cecilia Boloco",
+        "foto":"https://upload.wikimedia.org/wikipedia/commons/8/84/Mall_de_Costanera_Center.JPG",
+        "telefono":"562-987456321"
+    },
+
+    {
+        "local":"Universidad de Chile",
+        "direccion":"Galeria Metro Universidad de Chile Local 15",
+        "jefe":"Arturo Prat",
+        "foto":"https://http2.mlstatic.com/D_976642-MLC48214526244_112021-O.jpg",
+        "telefono":"562-321789321"
+    },
+
+    {
+        "local":"Patronato",
+        "direccion":"Galeria Santa Filomena Patronato Local 133",
+        "jefe":"Marcelo Salas",
+        "foto":"https://imganuncios.mitula.net/local_comercial_en_arriendo_en_patronato_9180104643287922836.jpg",
+        "telefono":"562-321887741"
+    }
+
+]
